@@ -7,8 +7,17 @@ def get_connection(db, user=env.user, host=env.host, password=env.password):
     return f'mysql+pymysql://{user}:{password}@{host}/{db}'
 
 def new_titanic_data():
-    return pd.read_sql('SELECT * FROM passengers', get_connection('titanic_db'))
-
+    '''
+    This function reads the titanic data from the Codeup db into a df.
+    '''
+    # Create SQL query.
+    sql_query = 'SELECT * FROM passengers'
+    
+    # Read in DataFrame from Codeup db.
+    df = pd.read_sql(sql_query, get_connection('titanic_db'))
+    
+    return df
+    
 def get_titanic_data():
     '''
     This function reads in titanic data from Codeup database, writes data to
