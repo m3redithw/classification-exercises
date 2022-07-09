@@ -1,14 +1,16 @@
-# classification
+# Supervised Machine Learning - Classification
 
-## Class demos
-### Data Acquisition
+## Class Demos & Resources
+#### Data Acquisition
 [Acquire Data](acquire_lesson.ipynb)
 
 ### Data Preparation
 [Prepare Data](classification_prep_lesson.ipynb)
 
 ### Tidy Data
-[Tidy Data] (tidy_data_lesson.ipynb)
+[Tidy Data](tidy_data_lesson.ipynb)
+
+[Tidy Data.pdf](https://github.com/m3redithw/classification-exercises/files/9075817/tidy-data.pdf)
 
 ### Exploratory Analysis
 [Data Exploration](explore_lesson.ipynb)
