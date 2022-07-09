@@ -24,10 +24,10 @@ def encode_embarked(df):
 
 def prep_titanic(df):
 
-    cols_to_drop = ['deck', 'embarked', 'class', 'age']
+    cols_to_drop = ['embarked', 'pclass']
     df = df.drop(columns=cols_to_drop)
     df['embark_town'] = df.embark_town.fillna(value='Southampton')
-    dummy_df = pd.get_dummies(df[['sex', 'embark_town']], dummy_na=False)
+    dummy_df = pd.get_dummies(df[['sex', 'class', 'embark_town']], dummy_na=False, drop_first = True)
     df = pd.concat([df, dummy_df], axis=1)
     return df
 
@@ -47,6 +47,7 @@ def prep_telco(df):
     df = pd.concat([df, dummy_df], axis=1)
     return df
 
+# spliting titanic dataset
 def train_validate_test_split(df, seed=123):
     train_and_validate, test = train_test_split(
         df, test_size=0.2, random_state=seed, stratify=df.survived
