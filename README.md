@@ -37,6 +37,9 @@
 
 ### Model Exercises
 [Decision Trees](model_exercises_decision_trees.ipynb)
+
 [Random Forest](model_exercises_random_forest.ipynb)
+
 [K-Nearest Neighbors](model_exercises_knn.ipynb)
+
 [Logistic Regression](model_exercises_logistic_regression.ipynb)
