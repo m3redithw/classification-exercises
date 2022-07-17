@@ -1,7 +1,7 @@
 # Supervised Machine Learning - Classification
 
 ## Class Demos & Resources
-#### Data Acquisition
+### Data Acquisition
 [Acquire Data](acquire_lesson.ipynb)
 
 ### Data Preparation
